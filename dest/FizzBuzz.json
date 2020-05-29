@@ -1,0 +1,260 @@
+{
+    "type": "Program",
+    "body": [
+        {
+            "type": "ForStatement",
+            "init": {
+                "type": "VariableDeclaration",
+                "declarations": [
+                    {
+                        "type": "VariableDeclarator",
+                        "id": {
+                            "type": "Identifier",
+                            "name": "i"
+                        },
+                        "init": {
+                            "type": "Literal",
+                            "value": 1
+                        }
+                    }
+                ],
+                "kind": "var"
+            },
+            "test": {
+                "type": "BinaryExpression",
+                "operator": "<=",
+                "left": {
+                    "type": "Identifier",
+                    "name": "i"
+                },
+                "right": {
+                    "type": "Literal",
+                    "value": 100
+                }
+            },
+            "update": {
+                "type": "UpdateExpression",
+                "operator": "++",
+                "argument": {
+                    "type": "Identifier",
+                    "name": "i"
+                },
+                "prefix": false
+            },
+            "body": {
+                "type": "BlockStatement",
+                "body": [
+                    {
+                        "type": "IfStatement",
+                        "test": {
+                            "type": "LogicalExpression",
+                            "operator": "&&",
+                            "left": {
+                                "type": "BinaryExpression",
+                                "operator": "===",
+                                "left": {
+                                    "type": "BinaryExpression",
+                                    "operator": "%",
+                                    "left": {
+                                        "type": "Identifier",
+                                        "name": "i"
+                                    },
+                                    "right": {
+                                        "type": "Literal",
+                                        "value": 3
+                                    }
+                                },
+                                "right": {
+                                    "type": "Literal",
+                                    "value": 0
+                                }
+                            },
+                            "right": {
+                                "type": "BinaryExpression",
+                                "operator": "===",
+                                "left": {
+                                    "type": "BinaryExpression",
+                                    "operator": "%",
+                                    "left": {
+                                        "type": "Identifier",
+                                        "name": "i"
+                                    },
+                                    "right": {
+                                        "type": "Literal",
+                                        "value": 5
+                                    }
+                                },
+                                "right": {
+                                    "type": "Literal",
+                                    "value": 0
+                                }
+                            }
+                        },
+                        "consequent": {
+                            "type": "BlockStatement",
+                            "body": [
+                                {
+                                    "type": "ExpressionStatement",
+                                    "expression": {
+                                        "type": "CallExpression",
+                                        "callee": {
+                                            "type": "MemberExpression",
+                                            "object": {
+                                                "type": "Identifier",
+                                                "name": "console"
+                                            },
+                                            "property": {
+                                                "type": "Identifier",
+                                                "name": "log"
+                                            },
+                                            "computed": false
+                                        },
+                                        "arguments": [
+                                            {
+                                                "type": "Literal",
+                                                "value": "FizzBuzz"
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        },
+                        "alternate": {
+                            "type": "IfStatement",
+                            "test": {
+                                "type": "BinaryExpression",
+                                "operator": "===",
+                                "left": {
+                                    "type": "BinaryExpression",
+                                    "operator": "%",
+                                    "left": {
+                                        "type": "Identifier",
+                                        "name": "i"
+                                    },
+                                    "right": {
+                                        "type": "Literal",
+                                        "value": 3
+                                    }
+                                },
+                                "right": {
+                                    "type": "Literal",
+                                    "value": 0
+                                }
+                            },
+                            "consequent": {
+                                "type": "BlockStatement",
+                                "body": [
+                                    {
+                                        "type": "ExpressionStatement",
+                                        "expression": {
+                                            "type": "CallExpression",
+                                            "callee": {
+                                                "type": "MemberExpression",
+                                                "object": {
+                                                    "type": "Identifier",
+                                                    "name": "console"
+                                                },
+                                                "property": {
+                                                    "type": "Identifier",
+                                                    "name": "log"
+                                                },
+                                                "computed": false
+                                            },
+                                            "arguments": [
+                                                {
+                                                    "type": "Literal",
+                                                    "value": "Fizz"
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ]
+                            },
+                            "alternate": {
+                                "type": "IfStatement",
+                                "test": {
+                                    "type": "BinaryExpression",
+                                    "operator": "===",
+                                    "left": {
+                                        "type": "BinaryExpression",
+                                        "operator": "%",
+                                        "left": {
+                                            "type": "Identifier",
+                                            "name": "i"
+                                        },
+                                        "right": {
+                                            "type": "Literal",
+                                            "value": 5
+                                        }
+                                    },
+                                    "right": {
+                                        "type": "Literal",
+                                        "value": 0
+                                    }
+                                },
+                                "consequent": {
+                                    "type": "BlockStatement",
+                                    "body": [
+                                        {
+                                            "type": "ExpressionStatement",
+                                            "expression": {
+                                                "type": "CallExpression",
+                                                "callee": {
+                                                    "type": "MemberExpression",
+                                                    "object": {
+                                                        "type": "Identifier",
+                                                        "name": "console"
+                                                    },
+                                                    "property": {
+                                                        "type": "Identifier",
+                                                        "name": "log"
+                                                    },
+                                                    "computed": false
+                                                },
+                                                "arguments": [
+                                                    {
+                                                        "type": "Literal",
+                                                        "value": "Buzz"
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    ]
+                                },
+                                "alternate": {
+                                    "type": "BlockStatement",
+                                    "body": [
+                                        {
+                                            "type": "ExpressionStatement",
+                                            "expression": {
+                                                "type": "CallExpression",
+                                                "callee": {
+                                                    "type": "MemberExpression",
+                                                    "object": {
+                                                        "type": "Identifier",
+                                                        "name": "console"
+                                                    },
+                                                    "property": {
+                                                        "type": "Identifier",
+                                                        "name": "log"
+                                                    },
+                                                    "computed": false
+                                                },
+                                                "arguments": [
+                                                    {
+                                                        "type": "Identifier",
+                                                        "name": "i"
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        }
+    ]
+}
