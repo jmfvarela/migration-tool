@@ -1,0 +1,59 @@
+
+
+
+Literal
+    = FloatLiteral
+    / IntegerLiteral          // May be a prefix of FloatLiteral
+    / BooleanLiteral
+    / CharLiteral
+    / StringLiteral
+    / NullLiteral
+
+IntegerLiteral
+    = HexNumeral
+    / BinaryNumeral
+    / OctalNumeral            // May be a prefix of HexNumeral or BinaryNumeral
+    / DecimalNumeral          // May be a prefix of OctalNumeral
+
+DecimalNumeral
+    = "0"
+    / [1-9]([_]*[0-9])*
+
+HexNumeral
+    = ("0x" / "0X") HexDigits
+
+OctalNumeral
+    = "0" ([_]*[0-7])+
+
+BinaryNumeral
+    = ("0b" / "0B") [01]([_]*[01])*
+
+FloatLiteral
+    = HexadecimalFloatingPointLiteral
+    / DecimalFloatingPointLiteral   // May be a prefix of above
+
+DecimalFloatingPointLiteral
+    = Digits "." Digits?  Exponent? [fFdD]?
+    / "." Digits Exponent? [fFdD]?
+    / Digits Exponent [fFdD]?
+    / Digits Exponent? [fFdD]
+
+Exponent
+    = [eE] [+\-]? Digits
+
+Digits
+    = [0-9]([_]*[0-9])*
+
+BooleanLiteral
+    = TRUE
+    / FALSE
+
+StringLiteral
+    = "'" (Escape / !['\\\n\r] _)* "'"            // this " keeps the editor happy
+    / "\"" (Escape / !["\\\n\r] _)* "\""         // this " keeps the editor happy
+
+NullLiteral = NULL
+
+QualIdent
+    = Identifier (DOT Identifier)*
+
