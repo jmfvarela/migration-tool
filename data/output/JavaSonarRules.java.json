@@ -1,393 +1,299 @@
 [
     {
         "type": "WhiteSpace",
-        "text": "\r\n"
+        "value": "\r\n"
     },
     [
         {
             "type": "SingleLineComment",
-            "text": "// Example 1: squid:S2077"
+            "value": "// Example 1: squid:S2077"
         },
         {
             "type": "WhiteSpace",
-            "text": "\r\n"
+            "value": "\r\n"
         },
         {
             "type": "SingleLineComment",
-            "text": "// Executing SQL queries is security-sensitive. It has led in the past to the following vulnerabilities"
+            "value": "// Executing SQL queries is security-sensitive. It has led in the past to the following vulnerabilities"
         },
         {
             "type": "WhiteSpace",
-            "text": "\r\n\r\n"
+            "value": "\r\n\r\n"
         },
         {
             "type": "Identifier",
-            "text": "Statement"
+            "value": "Statement"
         },
         {
             "type": "WhiteSpace",
-            "text": " "
+            "value": " "
         },
         {
             "type": "Identifier",
-            "text": "st"
+            "value": "st"
         },
         {
             "type": "WhiteSpace",
-            "text": " "
+            "value": " "
         },
         {
             "type": "Sign",
-            "text": "="
+            "value": "="
         },
         {
             "type": "WhiteSpace",
-            "text": " "
+            "value": " "
         },
         {
             "type": "Identifier",
-            "text": "null"
+            "value": "null"
         },
         {
             "type": "Sign",
-            "text": ";"
+            "value": ";"
         },
         {
             "type": "WhiteSpace",
-            "text": "\r\n"
+            "value": "\r\n"
         },
         {
             "type": "Identifier",
-            "text": "ResultSet"
+            "value": "ResultSet"
         },
         {
             "type": "WhiteSpace",
-            "text": " "
+            "value": " "
         },
         {
             "type": "Identifier",
-            "text": "rs"
+            "value": "rs"
         },
         {
             "type": "WhiteSpace",
-            "text": " "
+            "value": " "
         },
         {
             "type": "Sign",
-            "text": "="
+            "value": "="
         },
         {
             "type": "WhiteSpace",
-            "text": " "
+            "value": " "
         },
         {
             "type": "Identifier",
-            "text": "null"
+            "value": "null"
         },
         {
             "type": "Sign",
-            "text": ";"
+            "value": ";"
         },
         {
             "type": "WhiteSpace",
-            "text": "\r\n"
+            "value": "\r\n"
         },
         {
             "type": "Identifier",
-            "text": "int"
+            "value": "int"
         },
         {
             "type": "WhiteSpace",
-            "text": " "
+            "value": " "
         },
         {
             "type": "Identifier",
-            "text": "i"
+            "value": "i"
         },
         {
             "type": "WhiteSpace",
-            "text": " "
+            "value": " "
         },
         {
             "type": "Sign",
-            "text": "="
+            "value": "="
         },
         {
             "type": "WhiteSpace",
-            "text": " "
+            "value": " "
         },
         "0",
         {
             "type": "Sign",
-            "text": ";"
+            "value": ";"
         },
         {
             "type": "WhiteSpace",
-            "text": "\r\n"
+            "value": "\r\n"
+        },
+        {
+            "type": "Rule1",
+            "id": "sql",
+            "literal": "select localizacion from AR_Archivo_Expedientes where expediente = '"
+        },
+        {
+            "type": "WhiteSpace",
+            "value": " "
+        },
+        {
+            "type": "Sign",
+            "value": "+"
+        },
+        {
+            "type": "WhiteSpace",
+            "value": " "
         },
         {
             "type": "Identifier",
-            "text": "String"
+            "value": "expediente"
         },
         {
             "type": "WhiteSpace",
-            "text": " "
+            "value": " "
+        },
+        {
+            "type": "Sign",
+            "value": "+"
+        },
+        {
+            "type": "WhiteSpace",
+            "value": " "
+        },
+        {
+            "type": "Literal",
+            "subtype": "String",
+            "value": "'"
+        },
+        {
+            "type": "Sign",
+            "value": ";"
+        },
+        {
+            "type": "WhiteSpace",
+            "value": "\r\n\r\n"
         },
         {
             "type": "Identifier",
-            "text": "sql"
+            "value": "try"
         },
         {
             "type": "WhiteSpace",
-            "text": " "
+            "value": " "
         },
         {
             "type": "Sign",
-            "text": "="
+            "value": "{"
         },
         {
             "type": "WhiteSpace",
-            "text": " "
-        },
-        {
-            "type": "Sign",
-            "text": "\""
+            "value": "\r\n    "
         },
         {
             "type": "Identifier",
-            "text": "select"
+            "value": "st"
         },
         {
             "type": "WhiteSpace",
-            "text": " "
+            "value": " "
+        },
+        {
+            "type": "Sign",
+            "value": "="
+        },
+        {
+            "type": "WhiteSpace",
+            "value": " "
         },
         {
             "type": "Identifier",
-            "text": "localizacion"
+            "value": "con"
         },
         {
-            "type": "WhiteSpace",
-            "text": " "
+            "type": "Sign",
+            "value": "."
         },
         {
             "type": "Identifier",
-            "text": "from"
+            "value": "createStatement"
+        },
+        {
+            "type": "Sign",
+            "value": "("
+        },
+        {
+            "type": "Sign",
+            "value": ")"
+        },
+        {
+            "type": "Sign",
+            "value": ";"
         },
         {
             "type": "WhiteSpace",
-            "text": " "
+            "value": "\r\n    "
         },
         {
             "type": "Identifier",
-            "text": "AR_Archivo_Expedientes"
+            "value": "rs"
         },
         {
             "type": "WhiteSpace",
-            "text": " "
+            "value": " "
+        },
+        {
+            "type": "Sign",
+            "value": "="
+        },
+        {
+            "type": "WhiteSpace",
+            "value": " "
         },
         {
             "type": "Identifier",
-            "text": "where"
+            "value": "st"
         },
         {
-            "type": "WhiteSpace",
-            "text": " "
+            "type": "Sign",
+            "value": "."
         },
         {
             "type": "Identifier",
-            "text": "expediente"
-        },
-        {
-            "type": "WhiteSpace",
-            "text": " "
+            "value": "executeQuery"
         },
         {
             "type": "Sign",
-            "text": "="
-        },
-        {
-            "type": "WhiteSpace",
-            "text": " "
-        },
-        {
-            "type": "Sign",
-            "text": "'"
-        },
-        {
-            "type": "Sign",
-            "text": "\""
-        },
-        {
-            "type": "WhiteSpace",
-            "text": " "
-        },
-        {
-            "type": "Sign",
-            "text": "+"
-        },
-        {
-            "type": "WhiteSpace",
-            "text": " "
+            "value": "("
         },
         {
             "type": "Identifier",
-            "text": "expediente"
+            "value": "sql"
+        },
+        {
+            "type": "Sign",
+            "value": ")"
+        },
+        {
+            "type": "Sign",
+            "value": ";"
         },
         {
             "type": "WhiteSpace",
-            "text": " "
-        },
-        {
-            "type": "Sign",
-            "text": "+"
-        },
-        {
-            "type": "WhiteSpace",
-            "text": " "
-        },
-        {
-            "type": "Sign",
-            "text": "\""
-        },
-        {
-            "type": "Sign",
-            "text": "'"
-        },
-        {
-            "type": "Sign",
-            "text": "\""
-        },
-        {
-            "type": "Sign",
-            "text": ";"
-        },
-        {
-            "type": "WhiteSpace",
-            "text": "\r\n\r\n"
-        },
-        {
-            "type": "Identifier",
-            "text": "try"
-        },
-        {
-            "type": "WhiteSpace",
-            "text": " "
-        },
-        {
-            "type": "Sign",
-            "text": "{"
-        },
-        {
-            "type": "WhiteSpace",
-            "text": "\r\n    "
-        },
-        {
-            "type": "Identifier",
-            "text": "st"
-        },
-        {
-            "type": "WhiteSpace",
-            "text": " "
-        },
-        {
-            "type": "Sign",
-            "text": "="
-        },
-        {
-            "type": "WhiteSpace",
-            "text": " "
-        },
-        {
-            "type": "Identifier",
-            "text": "con"
-        },
-        {
-            "type": "Sign",
-            "text": "."
-        },
-        {
-            "type": "Identifier",
-            "text": "createStatement"
-        },
-        {
-            "type": "Sign",
-            "text": "("
-        },
-        {
-            "type": "Sign",
-            "text": ")"
-        },
-        {
-            "type": "Sign",
-            "text": ";"
-        },
-        {
-            "type": "WhiteSpace",
-            "text": "\r\n    "
-        },
-        {
-            "type": "Identifier",
-            "text": "rs"
-        },
-        {
-            "type": "WhiteSpace",
-            "text": " "
-        },
-        {
-            "type": "Sign",
-            "text": "="
-        },
-        {
-            "type": "WhiteSpace",
-            "text": " "
-        },
-        {
-            "type": "Identifier",
-            "text": "st"
-        },
-        {
-            "type": "Sign",
-            "text": "."
-        },
-        {
-            "type": "Identifier",
-            "text": "executeQuery"
-        },
-        {
-            "type": "Sign",
-            "text": "("
-        },
-        {
-            "type": "Identifier",
-            "text": "sql"
-        },
-        {
-            "type": "Sign",
-            "text": ")"
-        },
-        {
-            "type": "Sign",
-            "text": ";"
-        },
-        {
-            "type": "WhiteSpace",
-            "text": "\r\n    "
+            "value": "\r\n    "
         },
         {
             "type": "SingleLineComment",
-            "text": "//..."
+            "value": "//..."
         },
         {
             "type": "WhiteSpace",
-            "text": "\r\n"
+            "value": "\r\n"
         },
         {
             "type": "Sign",
-            "text": "}"
+            "value": "}"
         },
         {
             "type": "WhiteSpace",
-            "text": "\r\n\r\n"
+            "value": "\r\n\r\n"
         }
     ]
 ]
