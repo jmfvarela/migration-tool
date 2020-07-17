@@ -1,42 +1,32 @@
-// Utils ----------------------------------------------------------------------------------------------
-
-{
-  function extractList(list, index) {
-    return list.map(function(element) { return element[index]; });
-  }
-
-  function buildList(head, tail, index) {
-    return [head].concat(extractList(tail, index));
-  }
-
-  function extractOptional(optional, index) {
-    return optional ? optional[index] : null;
-  }
-
-  function optionalList(value) {
-    return value !== null ? value : [];
-  }
-}
-
 Start
-  = Text Rule Text
+  = head:Rule tail:(Rule)*
 
-Text
-  = head:Any tail:(Any)* {
+Rule
+ = Comment
+ / LineTerminatorSequence 
+ / _
+ / Literal
+ / Identifier
+ / Sign
+
+Other
+  = head:Char tail:(Char)* {
       return {
         type: "Text",
         text: buildList(head, tail, 0).join(''),
         };
     }
-Any
+
+Sign
+ = [=;"'+{.()}] // TODO
+
+Char
   = !Rule char:(.) {return char;}
-
-
 
 // Rule ----------------------------------------------------------------------------------------------
 
 // Example: String sql = "select ... '" + expediente + "'";
-Rule
+Rule1
   = "String" __ id:Identifier __ "=" __ 
     {
       return {
@@ -47,13 +37,11 @@ Rule
       };
     }
 
-RuleParts
+Rule1Parts
   = head:Identifier tail:(__ "+" __ Identifier)* 
     {
       return buildList(head, tail, 3);
     }
-
-
 
 // Basic grammar ------------------------------------------------------------------------------------------
 
@@ -61,40 +49,54 @@ __
   = (WhiteSpace / LineTerminatorSequence / Comment)*
 
 _
-  = WhiteSpace*
+  = first:WhiteSpace rest:WhiteSpace* {
+      return {
+        type: "WhiteSpace",
+        text: first + rest.join(''),
+        };
+    }
 
 WhiteSpace "whitespace"
-  = "\t"
-  / "\v"
-  / "\f"
-  / " "
-  / "\u00A0"
-  / "\uFEFF"
-  / [\u0020\u00A0\u1680\u2000-\u200A\u202F\u205F\u3000]
-
-LineTerminator
-  = [\n\r\u2028\u2029]
+  = [ \t\v\f\u00A0\uFEFF\u0020\u00A0\u1680\u2000-\u200A\u202F\u205F\u3000] 
 
 LineTerminatorSequence "end of line"
   = "\n"
   / "\r\n"
   / "\r"
   / "\u2028"
-  / "\u2029"
+  / "\u2029" { 
+    return {
+      type: 'LineTerminatorSequence',
+      };
+    }
 
 Comment "comment"
   = MultiLineComment
   / SingleLineComment
 
 MultiLineComment
-  = "/*" (!"*/" .)* "*/"
+  = first:"/*" med:(!"*/" .)* last:"*/" { 
+      return {
+        type: 'MultiLineComment',
+        text: first.concat(med.map(a => a[1]).join('')).concat(last),
+        };
+    }
 
 SingleLineComment
-  = "//" (!LineTerminator .)*
+  = first:"//" last:(![\n\r\u2028\u2029] .)* {
+    return {
+      type: 'SingleLineComment',
+      text: first.concat(last.map(a => a[1]).join('')),
+      }
+    }
 
 Identifier "identifier"
-  = !Keyword first:Letter rest:LetterOrDigit*
-  {return first + rest.join('');}
+  = !Keyword first:Letter rest:LetterOrDigit* {
+      return {
+        type: "Identifier",
+        text: first + rest.join(''),
+        };
+    }
 
 LetterOrDigit 
   = Letter / Digit
@@ -110,13 +112,11 @@ Keyword
       / "while"
       ) !LetterOrDigit
 
-
 Literal "literal"
     = FloatLiteral
     / IntegerLiteral          // May be a prefix of FloatLiteral
     / BooleanLiteral
     //StringLiteral
-    / NullLiteral
 
 IntegerLiteral
     = HexNumeral
@@ -135,7 +135,6 @@ HexSignificand
     = ("0x" / "0X") HexDigits? "." HexDigits
     / HexNumeral "."?                           // May be a prefix of above
     ;
-
 
 HexNumeral
     = ("0x" / "0X") HexDigits
@@ -168,17 +167,12 @@ Exponent
 BinaryExponent
     = [pP] [+\-]? Digits ;
 
-
 Digits
     = [0-9]([_]*[0-9])*
 
 BooleanLiteral
     = "true"
     / "false"
-
-
-
-NullLiteral = "null"
 
 QualIdent
     = Identifier ("." Identifier)*
