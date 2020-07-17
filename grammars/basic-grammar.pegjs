@@ -2,9 +2,8 @@ Start
   = head:Rule tail:(Rule)*
 
 Rule
- = Comment
- / LineTerminatorSequence 
- / _
+ = _
+ / Comment
  / Literal
  / Identifier
  / Sign
@@ -18,7 +17,12 @@ Other
     }
 
 Sign
- = [=;"'+{.()}] // TODO
+ = text:[=;"'+{.()}] { // TODO
+     return {
+       type: "Sign",
+       text: text,
+     };
+   }
 
 Char
   = !Rule char:(.) {return char;}
@@ -46,7 +50,7 @@ Rule1Parts
 // Basic grammar ------------------------------------------------------------------------------------------
 
 __
-  = (WhiteSpace / LineTerminatorSequence / Comment)*
+  = (WhiteSpace / Comment)*
 
 _
   = first:WhiteSpace rest:WhiteSpace* {
@@ -57,18 +61,7 @@ _
     }
 
 WhiteSpace "whitespace"
-  = [ \t\v\f\u00A0\uFEFF\u0020\u00A0\u1680\u2000-\u200A\u202F\u205F\u3000] 
-
-LineTerminatorSequence "end of line"
-  = "\n"
-  / "\r\n"
-  / "\r"
-  / "\u2028"
-  / "\u2029" { 
-    return {
-      type: 'LineTerminatorSequence',
-      };
-    }
+  = [ \r\n\t\v\f\u00A0\uFEFF\u0020\u00A0\u1680\u2000-\u200A\u202F\u205F\u3000] 
 
 Comment "comment"
   = MultiLineComment
