@@ -1,35 +1,16 @@
 Start = BasicGrammar
 
-// Rule ----------------------------------------------------------------------------------------------
-// Example: String sql = "select ... '" + expediente + "'";
-Rule1
-  = "String" __ id:Identifier __ "=" __ rule1parts:Rule1Parts ";"
-    {
-      return {
-        type: "Rule1",
-        id: id.value,
-        rule1parts: rule1parts,
-      };
-    }
+// Insert your rule here ----------------------------------------------------------------------------------
 
-Rule1Parts
-  = head:Rule1Part tail:(__ "+" __ Rule1Part)* {
-      return {
-        type: "Rule1Parts",
-        value: [head].concat(tail.map(a => a[3]))
-      };
-    }
-
-Rule1Part
-  = Identifier / StringLiteral
+Rule = "##"
 
 // Basic grammar ------------------------------------------------------------------------------------------
 
 BasicGrammar
-  = head:Rule tail:(Rule)*
+  = head:Element tail:(Element)*
 
-Rule
- = Rule1
+Element
+ = Rule
  / _
  / Comment
  / Literal

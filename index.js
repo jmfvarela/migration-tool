@@ -1,11 +1,22 @@
-const peg = require('pegjs');
-const fs = require('fs');
+const migrationTool = require('./migration-tool');
 
-const grammar = fs.readFileSync("grammars/basic-grammar.pegjs", "utf8");
-const parser = peg.generate(grammar);
-const input = fs.readFileSync("data/input/JavaSonarRules.java", "utf8");
-const ast = parser.parse(input);
+const ast = migrationTool({
+    inputFile: "data/input/JavaSonarRules.java",
+    pattern: `
+        // Example pattern: String sql = "select ... '" + expediente + "'";
+        Rule
+          = "String" __ id:Identifier __ "=" __ ruleparts:RuleParts ";"
+            { return {type:"Rule1", id:id.value, ruleparts:ruleparts}; }
+
+        RuleParts
+        = head:RulePart tail:(__ "+" __ RulePart)* 
+          { return {type:"RuleParts", value:[head].concat(tail.map(a => a[3]))}; }
+
+        RulePart
+        = Identifier / StringLiteral
+    `});
 
 const json = JSON.stringify(ast, null, 4);
-fs.writeFileSync("data/output/JavaSonarRules.java.json", json);
 console.log(json);
+
+

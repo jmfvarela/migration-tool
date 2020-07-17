@@ -128,44 +128,25 @@
         {
             "type": "Rule1",
             "id": "sql",
-            "literal": "select localizacion from AR_Archivo_Expedientes where expediente = '"
-        },
-        {
-            "type": "WhiteSpace",
-            "value": " "
-        },
-        {
-            "type": "Sign",
-            "value": "+"
-        },
-        {
-            "type": "WhiteSpace",
-            "value": " "
-        },
-        {
-            "type": "Identifier",
-            "value": "expediente"
-        },
-        {
-            "type": "WhiteSpace",
-            "value": " "
-        },
-        {
-            "type": "Sign",
-            "value": "+"
-        },
-        {
-            "type": "WhiteSpace",
-            "value": " "
-        },
-        {
-            "type": "Literal",
-            "subtype": "String",
-            "value": "'"
-        },
-        {
-            "type": "Sign",
-            "value": ";"
+            "rule1parts": {
+                "type": "Rule1Parts",
+                "value": [
+                    {
+                        "type": "Literal",
+                        "subtype": "String",
+                        "value": "select localizacion from AR_Archivo_Expedientes where expediente = '"
+                    },
+                    {
+                        "type": "Identifier",
+                        "value": "expediente"
+                    },
+                    {
+                        "type": "Literal",
+                        "subtype": "String",
+                        "value": "'"
+                    }
+                ]
+            }
         },
         {
             "type": "WhiteSpace",

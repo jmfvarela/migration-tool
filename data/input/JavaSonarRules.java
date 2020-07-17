@@ -1,15 +1,10 @@
-
-// Example 1: squid:S2077
-// Executing SQL queries is security-sensitive. It has led in the past to the following vulnerabilities
-
-Statement st = null;
-ResultSet rs = null;
-int i = 0;
-String sql = "select localizacion from AR_Archivo_Expedientes where expediente = '" + expediente + "'";
-
-try {
-    st = con.createStatement();
-    rs = st.executeQuery(sql);
-    //...
+// Example 1 */
+class MyClass {
+    void main() {
+        String id = "666";
+        String sql = "select a from b where id = '" + id + "'";
+        System.out.println(sql);
+    }
 }
+
 
