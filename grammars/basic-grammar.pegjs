@@ -1,43 +1,14 @@
-Start
-  = head:Rule tail:(Rule)*
-
-Rule
- = _
- / Comment
- / Literal
- / Identifier
- / Sign
-
-Other
-  = head:Char tail:(Char)* {
-      return {
-        type: "Text",
-        text: buildList(head, tail, 0).join(''),
-        };
-    }
-
-Sign
- = text:[=;"'+{.()}] { // TODO
-     return {
-       type: "Sign",
-       text: text,
-     };
-   }
-
-Char
-  = !Rule char:(.) {return char;}
+Start = BasicGrammar
 
 // Rule ----------------------------------------------------------------------------------------------
-
 // Example: String sql = "select ... '" + expediente + "'";
 Rule1
-  = "String" __ id:Identifier __ "=" __ 
+  = "String" __ id:Identifier __ "=" __ literal:StringLiteral
     {
       return {
-        type: "Rule",
-        id: id,
-        parts: optionalList(extractOptional('parts', 0)),
-        body: 'body'
+        type: "Rule1",
+        id: id.value,
+        literal: literal.value
       };
     }
 
@@ -47,7 +18,27 @@ Rule1Parts
       return buildList(head, tail, 3);
     }
 
+
 // Basic grammar ------------------------------------------------------------------------------------------
+
+BasicGrammar
+  = head:Rule tail:(Rule)*
+
+Rule
+ = Rule1
+ / _
+ / Comment
+ / Literal
+ / Identifier
+ / Sign
+
+Sign
+ = value:[=;"'+{.()}] { // TODO
+     return {
+       type: "Sign",
+       value: value,
+     };
+   }
 
 __
   = (WhiteSpace / Comment)*
@@ -56,7 +47,7 @@ _
   = first:WhiteSpace rest:WhiteSpace* {
       return {
         type: "WhiteSpace",
-        text: first + rest.join(''),
+        value: first + rest.join(''),
         };
     }
 
@@ -71,7 +62,7 @@ MultiLineComment
   = first:"/*" med:(!"*/" .)* last:"*/" { 
       return {
         type: 'MultiLineComment',
-        text: first.concat(med.map(a => a[1]).join('')).concat(last),
+        value: first.concat(med.map(a => a[1]).join('')).concat(last),
         };
     }
 
@@ -79,7 +70,7 @@ SingleLineComment
   = first:"//" last:(![\n\r\u2028\u2029] .)* {
     return {
       type: 'SingleLineComment',
-      text: first.concat(last.map(a => a[1]).join('')),
+      value: first.concat(last.map(a => a[1]).join('')),
       }
     }
 
@@ -87,7 +78,7 @@ Identifier "identifier"
   = !Keyword first:Letter rest:LetterOrDigit* {
       return {
         type: "Identifier",
-        text: first + rest.join(''),
+        value: first + rest.join(''),
         };
     }
 
@@ -109,7 +100,7 @@ Literal "literal"
     = FloatLiteral
     / IntegerLiteral          // May be a prefix of FloatLiteral
     / BooleanLiteral
-    //StringLiteral
+    / StringLiteral
 
 IntegerLiteral
     = HexNumeral
@@ -122,21 +113,20 @@ DecimalNumeral
     / [1-9]([_]*[0-9])*
 
 HexadecimalFloatingPointLiteral
-    = HexSignificand BinaryExponent [fFdD]? ;
+    = HexSignificand BinaryExponent [fFdD]?
 
 HexSignificand
     = ("0x" / "0X") HexDigits? "." HexDigits
     / HexNumeral "."?                           // May be a prefix of above
-    ;
 
 HexNumeral
     = ("0x" / "0X") HexDigits
 
 HexDigits
-    = HexDigit ([_]*HexDigit)* ;
+    = HexDigit ([_]*HexDigit)*
 
 HexDigit
-    = [a-f] / [A-F] / [0-9] ;
+    = [a-f] / [A-F] / [0-9]
 
 OctalNumeral
     = "0" ([_]*[0-7])+
@@ -170,3 +160,77 @@ BooleanLiteral
 QualIdent
     = Identifier ("." Identifier)*
 
+
+
+// StringLiteral -------------------------------------------------
+
+StringLiteral "string"
+  = '"' chars:DoubleStringCharacter* '"' {
+      return { type: "Literal", subtype: "String", value: chars.join("") };
+    }
+  / "'" chars:SingleStringCharacter* "'" {
+      return { type: "Literal", subtype: "String", value: chars.join("") };
+    }
+
+DoubleStringCharacter
+  = !('"' / "\\" / LineTerminator) . { return text(); }
+  / "\\" sequence:EscapeSequence { return sequence; }
+  / LineContinuation
+
+LineTerminator
+  = [\n\r\u2028\u2029]
+
+LineTerminatorSequence "end of line"
+  = "\n"
+  / "\r\n"
+  / "\r"
+  / "\u2028"
+  / "\u2029"
+
+SingleStringCharacter
+  = !("'" / "\\" / LineTerminator) . { return text(); }
+  / "\\" sequence:EscapeSequence { return sequence; }
+  / LineContinuation
+
+LineContinuation
+  = "\\" LineTerminatorSequence { return ""; }
+
+EscapeSequence
+  = CharacterEscapeSequence
+  / "0" ![0-9] { return "\0"; }
+  / HexEscapeSequence
+  / UnicodeEscapeSequence
+
+CharacterEscapeSequence
+  = SingleEscapeCharacter
+  / NonEscapeCharacter
+
+SingleEscapeCharacter
+  = "'"
+  / '"'
+  / "\\"
+  / "b"  { return "\b"; }
+  / "f"  { return "\f"; }
+  / "n"  { return "\n"; }
+  / "r"  { return "\r"; }
+  / "t"  { return "\t"; }
+  / "v"  { return "\v"; }
+
+NonEscapeCharacter
+  = !(EscapeCharacter / LineTerminator) . { return text(); }
+
+EscapeCharacter
+  = SingleEscapeCharacter
+  / [0-9]
+  / "x"
+  / "u"
+
+HexEscapeSequence
+  = "x" digits:$(HexDigit HexDigit) {
+      return String.fromCharCode(parseInt(digits, 16));
+    }
+
+UnicodeEscapeSequence
+  = "u" digits:$(HexDigit HexDigit HexDigit HexDigit) {
+      return String.fromCharCode(parseInt(digits, 16));
+    }

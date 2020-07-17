@@ -1,1543 +1,393 @@
 [
+    {
+        "type": "WhiteSpace",
+        "text": "\r\n"
+    },
     [
-        [
-            null,
-            "\r"
-        ],
-        [
-            null,
-            "\n"
-        ],
-        [
-            null,
-            "/"
-        ],
-        [
-            null,
-            "/"
-        ],
-        [
-            null,
-            " "
-        ],
-        [
-            null,
-            "E"
-        ],
-        [
-            null,
-            "x"
-        ],
-        [
-            null,
-            "a"
-        ],
-        [
-            null,
-            "m"
-        ],
-        [
-            null,
-            "p"
-        ],
-        [
-            null,
-            "l"
-        ],
-        [
-            null,
-            "e"
-        ],
-        [
-            null,
-            " "
-        ],
-        [
-            null,
-            "1"
-        ],
-        [
-            null,
-            ":"
-        ],
-        [
-            null,
-            " "
-        ],
-        [
-            null,
-            "s"
-        ],
-        [
-            null,
-            "q"
-        ],
-        [
-            null,
-            "u"
-        ],
-        [
-            null,
-            "i"
-        ],
-        [
-            null,
-            "d"
-        ],
-        [
-            null,
-            ":"
-        ],
-        [
-            null,
-            "S"
-        ],
-        [
-            null,
-            "2"
-        ],
-        [
-            null,
-            "0"
-        ],
-        [
-            null,
-            "7"
-        ],
-        [
-            null,
-            "7"
-        ],
-        [
-            null,
-            "\r"
-        ],
-        [
-            null,
-            "\n"
-        ],
-        [
-            null,
-            "/"
-        ],
-        [
-            null,
-            "/"
-        ],
-        [
-            null,
-            " "
-        ],
-        [
-            null,
-            "E"
-        ],
-        [
-            null,
-            "x"
-        ],
-        [
-            null,
-            "e"
-        ],
-        [
-            null,
-            "c"
-        ],
-        [
-            null,
-            "u"
-        ],
-        [
-            null,
-            "t"
-        ],
-        [
-            null,
-            "i"
-        ],
-        [
-            null,
-            "n"
-        ],
-        [
-            null,
-            "g"
-        ],
-        [
-            null,
-            " "
-        ],
-        [
-            null,
-            "S"
-        ],
-        [
-            null,
-            "Q"
-        ],
-        [
-            null,
-            "L"
-        ],
-        [
-            null,
-            " "
-        ],
-        [
-            null,
-            "q"
-        ],
-        [
-            null,
-            "u"
-        ],
-        [
-            null,
-            "e"
-        ],
-        [
-            null,
-            "r"
-        ],
-        [
-            null,
-            "i"
-        ],
-        [
-            null,
-            "e"
-        ],
-        [
-            null,
-            "s"
-        ],
-        [
-            null,
-            " "
-        ],
-        [
-            null,
-            "i"
-        ],
-        [
-            null,
-            "s"
-        ],
-        [
-            null,
-            " "
-        ],
-        [
-            null,
-            "s"
-        ],
-        [
-            null,
-            "e"
-        ],
-        [
-            null,
-            "c"
-        ],
-        [
-            null,
-            "u"
-        ],
-        [
-            null,
-            "r"
-        ],
-        [
-            null,
-            "i"
-        ],
-        [
-            null,
-            "t"
-        ],
-        [
-            null,
-            "y"
-        ],
-        [
-            null,
-            "-"
-        ],
-        [
-            null,
-            "s"
-        ],
-        [
-            null,
-            "e"
-        ],
-        [
-            null,
-            "n"
-        ],
-        [
-            null,
-            "s"
-        ],
-        [
-            null,
-            "i"
-        ],
-        [
-            null,
-            "t"
-        ],
-        [
-            null,
-            "i"
-        ],
-        [
-            null,
-            "v"
-        ],
-        [
-            null,
-            "e"
-        ],
-        [
-            null,
-            "."
-        ],
-        [
-            null,
-            " "
-        ],
-        [
-            null,
-            "I"
-        ],
-        [
-            null,
-            "t"
-        ],
-        [
-            null,
-            " "
-        ],
-        [
-            null,
-            "h"
-        ],
-        [
-            null,
-            "a"
-        ],
-        [
-            null,
-            "s"
-        ],
-        [
-            null,
-            " "
-        ],
-        [
-            null,
-            "l"
-        ],
-        [
-            null,
-            "e"
-        ],
-        [
-            null,
-            "d"
-        ],
-        [
-            null,
-            " "
-        ],
-        [
-            null,
-            "i"
-        ],
-        [
-            null,
-            "n"
-        ],
-        [
-            null,
-            " "
-        ],
-        [
-            null,
-            "t"
-        ],
-        [
-            null,
-            "h"
-        ],
-        [
-            null,
-            "e"
-        ],
-        [
-            null,
-            " "
-        ],
-        [
-            null,
-            "p"
-        ],
-        [
-            null,
-            "a"
-        ],
-        [
-            null,
-            "s"
-        ],
-        [
-            null,
-            "t"
-        ],
-        [
-            null,
-            " "
-        ],
-        [
-            null,
-            "t"
-        ],
-        [
-            null,
-            "o"
-        ],
-        [
-            null,
-            " "
-        ],
-        [
-            null,
-            "t"
-        ],
-        [
-            null,
-            "h"
-        ],
-        [
-            null,
-            "e"
-        ],
-        [
-            null,
-            " "
-        ],
-        [
-            null,
-            "f"
-        ],
-        [
-            null,
-            "o"
-        ],
-        [
-            null,
-            "l"
-        ],
-        [
-            null,
-            "l"
-        ],
-        [
-            null,
-            "o"
-        ],
-        [
-            null,
-            "w"
-        ],
-        [
-            null,
-            "i"
-        ],
-        [
-            null,
-            "n"
-        ],
-        [
-            null,
-            "g"
-        ],
-        [
-            null,
-            " "
-        ],
-        [
-            null,
-            "v"
-        ],
-        [
-            null,
-            "u"
-        ],
-        [
-            null,
-            "l"
-        ],
-        [
-            null,
-            "n"
-        ],
-        [
-            null,
-            "e"
-        ],
-        [
-            null,
-            "r"
-        ],
-        [
-            null,
-            "a"
-        ],
-        [
-            null,
-            "b"
-        ],
-        [
-            null,
-            "i"
-        ],
-        [
-            null,
-            "l"
-        ],
-        [
-            null,
-            "i"
-        ],
-        [
-            null,
-            "t"
-        ],
-        [
-            null,
-            "i"
-        ],
-        [
-            null,
-            "e"
-        ],
-        [
-            null,
-            "s"
-        ],
-        [
-            null,
-            "\r"
-        ],
-        [
-            null,
-            "\n"
-        ],
-        [
-            null,
-            "\r"
-        ],
-        [
-            null,
-            "\n"
-        ],
-        [
-            null,
-            "S"
-        ],
-        [
-            null,
-            "t"
-        ],
-        [
-            null,
-            "a"
-        ],
-        [
-            null,
-            "t"
-        ],
-        [
-            null,
-            "e"
-        ],
-        [
-            null,
-            "m"
-        ],
-        [
-            null,
-            "e"
-        ],
-        [
-            null,
-            "n"
-        ],
-        [
-            null,
-            "t"
-        ],
-        [
-            null,
-            " "
-        ],
-        [
-            null,
-            "s"
-        ],
-        [
-            null,
-            "t"
-        ],
-        [
-            null,
-            " "
-        ],
-        [
-            null,
-            "="
-        ],
-        [
-            null,
-            " "
-        ],
-        [
-            null,
-            "n"
-        ],
-        [
-            null,
-            "u"
-        ],
-        [
-            null,
-            "l"
-        ],
-        [
-            null,
-            "l"
-        ],
-        [
-            null,
-            ";"
-        ],
-        [
-            null,
-            "\r"
-        ],
-        [
-            null,
-            "\n"
-        ],
-        [
-            null,
-            "R"
-        ],
-        [
-            null,
-            "e"
-        ],
-        [
-            null,
-            "s"
-        ],
-        [
-            null,
-            "u"
-        ],
-        [
-            null,
-            "l"
-        ],
-        [
-            null,
-            "t"
-        ],
-        [
-            null,
-            "S"
-        ],
-        [
-            null,
-            "e"
-        ],
-        [
-            null,
-            "t"
-        ],
-        [
-            null,
-            " "
-        ],
-        [
-            null,
-            "r"
-        ],
-        [
-            null,
-            "s"
-        ],
-        [
-            null,
-            " "
-        ],
-        [
-            null,
-            "="
-        ],
-        [
-            null,
-            " "
-        ],
-        [
-            null,
-            "n"
-        ],
-        [
-            null,
-            "u"
-        ],
-        [
-            null,
-            "l"
-        ],
-        [
-            null,
-            "l"
-        ],
-        [
-            null,
-            ";"
-        ],
-        [
-            null,
-            "\r"
-        ],
-        [
-            null,
-            "\n"
-        ],
-        [
-            null,
-            "i"
-        ],
-        [
-            null,
-            "n"
-        ],
-        [
-            null,
-            "t"
-        ],
-        [
-            null,
-            " "
-        ],
-        [
-            null,
-            "i"
-        ],
-        [
-            null,
-            " "
-        ],
-        [
-            null,
-            "="
-        ],
-        [
-            null,
-            " "
-        ],
-        [
-            null,
-            "0"
-        ],
-        [
-            null,
-            ";"
-        ],
-        [
-            null,
-            "\r"
-        ],
-        [
-            null,
-            "\n"
-        ],
-        [
-            null,
-            "S"
-        ],
-        [
-            null,
-            "t"
-        ],
-        [
-            null,
-            "r"
-        ],
-        [
-            null,
-            "i"
-        ],
-        [
-            null,
-            "n"
-        ],
-        [
-            null,
-            "g"
-        ],
-        [
-            null,
-            " "
-        ],
-        [
-            null,
-            "s"
-        ],
-        [
-            null,
-            "q"
-        ],
-        [
-            null,
-            "l"
-        ],
-        [
-            null,
-            " "
-        ],
-        [
-            null,
-            "="
-        ],
-        [
-            null,
-            " "
-        ],
-        [
-            null,
-            "\""
-        ],
-        [
-            null,
-            "s"
-        ],
-        [
-            null,
-            "e"
-        ],
-        [
-            null,
-            "l"
-        ],
-        [
-            null,
-            "e"
-        ],
-        [
-            null,
-            "c"
-        ],
-        [
-            null,
-            "t"
-        ],
-        [
-            null,
-            " "
-        ],
-        [
-            null,
-            "l"
-        ],
-        [
-            null,
-            "o"
-        ],
-        [
-            null,
-            "c"
-        ],
-        [
-            null,
-            "a"
-        ],
-        [
-            null,
-            "l"
-        ],
-        [
-            null,
-            "i"
-        ],
-        [
-            null,
-            "z"
-        ],
-        [
-            null,
-            "a"
-        ],
-        [
-            null,
-            "c"
-        ],
-        [
-            null,
-            "i"
-        ],
-        [
-            null,
-            "o"
-        ],
-        [
-            null,
-            "n"
-        ],
-        [
-            null,
-            " "
-        ],
-        [
-            null,
-            "f"
-        ],
-        [
-            null,
-            "r"
-        ],
-        [
-            null,
-            "o"
-        ],
-        [
-            null,
-            "m"
-        ],
-        [
-            null,
-            " "
-        ],
-        [
-            null,
-            "A"
-        ],
-        [
-            null,
-            "R"
-        ],
-        [
-            null,
-            "_"
-        ],
-        [
-            null,
-            "A"
-        ],
-        [
-            null,
-            "r"
-        ],
-        [
-            null,
-            "c"
-        ],
-        [
-            null,
-            "h"
-        ],
-        [
-            null,
-            "i"
-        ],
-        [
-            null,
-            "v"
-        ],
-        [
-            null,
-            "o"
-        ],
-        [
-            null,
-            "_"
-        ],
-        [
-            null,
-            "E"
-        ],
-        [
-            null,
-            "x"
-        ],
-        [
-            null,
-            "p"
-        ],
-        [
-            null,
-            "e"
-        ],
-        [
-            null,
-            "d"
-        ],
-        [
-            null,
-            "i"
-        ],
-        [
-            null,
-            "e"
-        ],
-        [
-            null,
-            "n"
-        ],
-        [
-            null,
-            "t"
-        ],
-        [
-            null,
-            "e"
-        ],
-        [
-            null,
-            "s"
-        ],
-        [
-            null,
-            " "
-        ],
-        [
-            null,
-            "w"
-        ],
-        [
-            null,
-            "h"
-        ],
-        [
-            null,
-            "e"
-        ],
-        [
-            null,
-            "r"
-        ],
-        [
-            null,
-            "e"
-        ],
-        [
-            null,
-            " "
-        ],
-        [
-            null,
-            "e"
-        ],
-        [
-            null,
-            "x"
-        ],
-        [
-            null,
-            "p"
-        ],
-        [
-            null,
-            "e"
-        ],
-        [
-            null,
-            "d"
-        ],
-        [
-            null,
-            "i"
-        ],
-        [
-            null,
-            "e"
-        ],
-        [
-            null,
-            "n"
-        ],
-        [
-            null,
-            "t"
-        ],
-        [
-            null,
-            "e"
-        ],
-        [
-            null,
-            " "
-        ],
-        [
-            null,
-            "="
-        ],
-        [
-            null,
-            " "
-        ],
-        [
-            null,
-            "'"
-        ],
-        [
-            null,
-            "\""
-        ],
-        [
-            null,
-            " "
-        ],
-        [
-            null,
-            "+"
-        ],
-        [
-            null,
-            " "
-        ],
-        [
-            null,
-            "e"
-        ],
-        [
-            null,
-            "x"
-        ],
-        [
-            null,
-            "p"
-        ],
-        [
-            null,
-            "e"
-        ],
-        [
-            null,
-            "d"
-        ],
-        [
-            null,
-            "i"
-        ],
-        [
-            null,
-            "e"
-        ],
-        [
-            null,
-            "n"
-        ],
-        [
-            null,
-            "t"
-        ],
-        [
-            null,
-            "e"
-        ],
-        [
-            null,
-            " "
-        ],
-        [
-            null,
-            "+"
-        ],
-        [
-            null,
-            " "
-        ],
-        [
-            null,
-            "\""
-        ],
-        [
-            null,
-            "'"
-        ],
-        [
-            null,
-            "\""
-        ],
-        [
-            null,
-            ";"
-        ],
-        [
-            null,
-            "\r"
-        ],
-        [
-            null,
-            "\n"
-        ],
-        [
-            null,
-            "\r"
-        ],
-        [
-            null,
-            "\n"
-        ]
-    ],
-    "try",
-    [
-        [
-            null,
-            " "
-        ],
-        [
-            null,
-            "{"
-        ],
-        [
-            null,
-            "\r"
-        ],
-        [
-            null,
-            "\n"
-        ],
-        [
-            null,
-            " "
-        ],
-        [
-            null,
-            " "
-        ],
-        [
-            null,
-            " "
-        ],
-        [
-            null,
-            " "
-        ],
-        [
-            null,
-            "s"
-        ],
-        [
-            null,
-            "t"
-        ],
-        [
-            null,
-            " "
-        ],
-        [
-            null,
-            "="
-        ],
-        [
-            null,
-            " "
-        ],
-        [
-            null,
-            "c"
-        ],
-        [
-            null,
-            "o"
-        ],
-        [
-            null,
-            "n"
-        ],
-        [
-            null,
-            "."
-        ],
-        [
-            null,
-            "c"
-        ],
-        [
-            null,
-            "r"
-        ],
-        [
-            null,
-            "e"
-        ],
-        [
-            null,
-            "a"
-        ],
-        [
-            null,
-            "t"
-        ],
-        [
-            null,
-            "e"
-        ],
-        [
-            null,
-            "S"
-        ],
-        [
-            null,
-            "t"
-        ],
-        [
-            null,
-            "a"
-        ],
-        [
-            null,
-            "t"
-        ],
-        [
-            null,
-            "e"
-        ],
-        [
-            null,
-            "m"
-        ],
-        [
-            null,
-            "e"
-        ],
-        [
-            null,
-            "n"
-        ],
-        [
-            null,
-            "t"
-        ],
-        [
-            null,
-            "("
-        ],
-        [
-            null,
-            ")"
-        ],
-        [
-            null,
-            ";"
-        ],
-        [
-            null,
-            "\r"
-        ],
-        [
-            null,
-            "\n"
-        ],
-        [
-            null,
-            " "
-        ],
-        [
-            null,
-            " "
-        ],
-        [
-            null,
-            " "
-        ],
-        [
-            null,
-            " "
-        ],
-        [
-            null,
-            "r"
-        ],
-        [
-            null,
-            "s"
-        ],
-        [
-            null,
-            " "
-        ],
-        [
-            null,
-            "="
-        ],
-        [
-            null,
-            " "
-        ],
-        [
-            null,
-            "s"
-        ],
-        [
-            null,
-            "t"
-        ],
-        [
-            null,
-            "."
-        ],
-        [
-            null,
-            "e"
-        ],
-        [
-            null,
-            "x"
-        ],
-        [
-            null,
-            "e"
-        ],
-        [
-            null,
-            "c"
-        ],
-        [
-            null,
-            "u"
-        ],
-        [
-            null,
-            "t"
-        ],
-        [
-            null,
-            "e"
-        ],
-        [
-            null,
-            "Q"
-        ],
-        [
-            null,
-            "u"
-        ],
-        [
-            null,
-            "e"
-        ],
-        [
-            null,
-            "r"
-        ],
-        [
-            null,
-            "y"
-        ],
-        [
-            null,
-            "("
-        ],
-        [
-            null,
-            "s"
-        ],
-        [
-            null,
-            "q"
-        ],
-        [
-            null,
-            "l"
-        ],
-        [
-            null,
-            ")"
-        ],
-        [
-            null,
-            ";"
-        ],
-        [
-            null,
-            "\r"
-        ],
-        [
-            null,
-            "\n"
-        ],
-        [
-            null,
-            " "
-        ],
-        [
-            null,
-            " "
-        ],
-        [
-            null,
-            " "
-        ],
-        [
-            null,
-            " "
-        ],
-        [
-            null,
-            "/"
-        ],
-        [
-            null,
-            "/"
-        ],
-        [
-            null,
-            "."
-        ],
-        [
-            null,
-            "."
-        ],
-        [
-            null,
-            "."
-        ],
-        [
-            null,
-            "\r"
-        ],
-        [
-            null,
-            "\n"
-        ],
-        [
-            null,
-            "}"
-        ],
-        [
-            null,
-            "\r"
-        ],
-        [
-            null,
-            "\n"
-        ],
-        [
-            null,
-            "\r"
-        ],
-        [
-            null,
-            "\n"
-        ]
+        {
+            "type": "SingleLineComment",
+            "text": "// Example 1: squid:S2077"
+        },
+        {
+            "type": "WhiteSpace",
+            "text": "\r\n"
+        },
+        {
+            "type": "SingleLineComment",
+            "text": "// Executing SQL queries is security-sensitive. It has led in the past to the following vulnerabilities"
+        },
+        {
+            "type": "WhiteSpace",
+            "text": "\r\n\r\n"
+        },
+        {
+            "type": "Identifier",
+            "text": "Statement"
+        },
+        {
+            "type": "WhiteSpace",
+            "text": " "
+        },
+        {
+            "type": "Identifier",
+            "text": "st"
+        },
+        {
+            "type": "WhiteSpace",
+            "text": " "
+        },
+        {
+            "type": "Sign",
+            "text": "="
+        },
+        {
+            "type": "WhiteSpace",
+            "text": " "
+        },
+        {
+            "type": "Identifier",
+            "text": "null"
+        },
+        {
+            "type": "Sign",
+            "text": ";"
+        },
+        {
+            "type": "WhiteSpace",
+            "text": "\r\n"
+        },
+        {
+            "type": "Identifier",
+            "text": "ResultSet"
+        },
+        {
+            "type": "WhiteSpace",
+            "text": " "
+        },
+        {
+            "type": "Identifier",
+            "text": "rs"
+        },
+        {
+            "type": "WhiteSpace",
+            "text": " "
+        },
+        {
+            "type": "Sign",
+            "text": "="
+        },
+        {
+            "type": "WhiteSpace",
+            "text": " "
+        },
+        {
+            "type": "Identifier",
+            "text": "null"
+        },
+        {
+            "type": "Sign",
+            "text": ";"
+        },
+        {
+            "type": "WhiteSpace",
+            "text": "\r\n"
+        },
+        {
+            "type": "Identifier",
+            "text": "int"
+        },
+        {
+            "type": "WhiteSpace",
+            "text": " "
+        },
+        {
+            "type": "Identifier",
+            "text": "i"
+        },
+        {
+            "type": "WhiteSpace",
+            "text": " "
+        },
+        {
+            "type": "Sign",
+            "text": "="
+        },
+        {
+            "type": "WhiteSpace",
+            "text": " "
+        },
+        "0",
+        {
+            "type": "Sign",
+            "text": ";"
+        },
+        {
+            "type": "WhiteSpace",
+            "text": "\r\n"
+        },
+        {
+            "type": "Identifier",
+            "text": "String"
+        },
+        {
+            "type": "WhiteSpace",
+            "text": " "
+        },
+        {
+            "type": "Identifier",
+            "text": "sql"
+        },
+        {
+            "type": "WhiteSpace",
+            "text": " "
+        },
+        {
+            "type": "Sign",
+            "text": "="
+        },
+        {
+            "type": "WhiteSpace",
+            "text": " "
+        },
+        {
+            "type": "Sign",
+            "text": "\""
+        },
+        {
+            "type": "Identifier",
+            "text": "select"
+        },
+        {
+            "type": "WhiteSpace",
+            "text": " "
+        },
+        {
+            "type": "Identifier",
+            "text": "localizacion"
+        },
+        {
+            "type": "WhiteSpace",
+            "text": " "
+        },
+        {
+            "type": "Identifier",
+            "text": "from"
+        },
+        {
+            "type": "WhiteSpace",
+            "text": " "
+        },
+        {
+            "type": "Identifier",
+            "text": "AR_Archivo_Expedientes"
+        },
+        {
+            "type": "WhiteSpace",
+            "text": " "
+        },
+        {
+            "type": "Identifier",
+            "text": "where"
+        },
+        {
+            "type": "WhiteSpace",
+            "text": " "
+        },
+        {
+            "type": "Identifier",
+            "text": "expediente"
+        },
+        {
+            "type": "WhiteSpace",
+            "text": " "
+        },
+        {
+            "type": "Sign",
+            "text": "="
+        },
+        {
+            "type": "WhiteSpace",
+            "text": " "
+        },
+        {
+            "type": "Sign",
+            "text": "'"
+        },
+        {
+            "type": "Sign",
+            "text": "\""
+        },
+        {
+            "type": "WhiteSpace",
+            "text": " "
+        },
+        {
+            "type": "Sign",
+            "text": "+"
+        },
+        {
+            "type": "WhiteSpace",
+            "text": " "
+        },
+        {
+            "type": "Identifier",
+            "text": "expediente"
+        },
+        {
+            "type": "WhiteSpace",
+            "text": " "
+        },
+        {
+            "type": "Sign",
+            "text": "+"
+        },
+        {
+            "type": "WhiteSpace",
+            "text": " "
+        },
+        {
+            "type": "Sign",
+            "text": "\""
+        },
+        {
+            "type": "Sign",
+            "text": "'"
+        },
+        {
+            "type": "Sign",
+            "text": "\""
+        },
+        {
+            "type": "Sign",
+            "text": ";"
+        },
+        {
+            "type": "WhiteSpace",
+            "text": "\r\n\r\n"
+        },
+        {
+            "type": "Identifier",
+            "text": "try"
+        },
+        {
+            "type": "WhiteSpace",
+            "text": " "
+        },
+        {
+            "type": "Sign",
+            "text": "{"
+        },
+        {
+            "type": "WhiteSpace",
+            "text": "\r\n    "
+        },
+        {
+            "type": "Identifier",
+            "text": "st"
+        },
+        {
+            "type": "WhiteSpace",
+            "text": " "
+        },
+        {
+            "type": "Sign",
+            "text": "="
+        },
+        {
+            "type": "WhiteSpace",
+            "text": " "
+        },
+        {
+            "type": "Identifier",
+            "text": "con"
+        },
+        {
+            "type": "Sign",
+            "text": "."
+        },
+        {
+            "type": "Identifier",
+            "text": "createStatement"
+        },
+        {
+            "type": "Sign",
+            "text": "("
+        },
+        {
+            "type": "Sign",
+            "text": ")"
+        },
+        {
+            "type": "Sign",
+            "text": ";"
+        },
+        {
+            "type": "WhiteSpace",
+            "text": "\r\n    "
+        },
+        {
+            "type": "Identifier",
+            "text": "rs"
+        },
+        {
+            "type": "WhiteSpace",
+            "text": " "
+        },
+        {
+            "type": "Sign",
+            "text": "="
+        },
+        {
+            "type": "WhiteSpace",
+            "text": " "
+        },
+        {
+            "type": "Identifier",
+            "text": "st"
+        },
+        {
+            "type": "Sign",
+            "text": "."
+        },
+        {
+            "type": "Identifier",
+            "text": "executeQuery"
+        },
+        {
+            "type": "Sign",
+            "text": "("
+        },
+        {
+            "type": "Identifier",
+            "text": "sql"
+        },
+        {
+            "type": "Sign",
+            "text": ")"
+        },
+        {
+            "type": "Sign",
+            "text": ";"
+        },
+        {
+            "type": "WhiteSpace",
+            "text": "\r\n    "
+        },
+        {
+            "type": "SingleLineComment",
+            "text": "//..."
+        },
+        {
+            "type": "WhiteSpace",
+            "text": "\r\n"
+        },
+        {
+            "type": "Sign",
+            "text": "}"
+        },
+        {
+            "type": "WhiteSpace",
+            "text": "\r\n\r\n"
+        }
     ]
 ]
